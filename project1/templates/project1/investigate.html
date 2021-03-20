@@ -4,13 +4,104 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>INVESTIGATE</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>{% block title %} {% endblock %}</title>
+        <style>
+          
+         
+          img{
+  width:100%;
+  max-width:100%;
+}
+
+            {% block css %} {% endblock %}
+    </style>
     <style>
+      #back{
+    background-image: url("bg.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    border:none;
+    margin-top: -3px;
+      }
+      #form{
+        opacity: 0.4;
+        margin-top: -670px;
+      }
+      #form1{
+        background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    margin-left: 125px;
+    margin-right: 20px;
+      }
+    
     </style>
 </head>
-<body>
+<body style="background-color: black;">
 {% load static %}
-{% block body %} {% endblock %}
-</body>
-</html>
+
+<!-- <div class="container"> -->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-5">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav nav-pills  mt-2 mt-lg-0 ml-auto mr-auto ">
+      <li class="nav-item ">
+        <a class="nav-link active  mx-3 px-4" href="#">HOME</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link mx-3" href="#">INVESTIGATE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link mx-3" href="#">VIEW CASE DETAILS</a>
+      </li>
+      <li class="nav-item mx-3">
+          <a class="nav-link " href="#">VIEW CRIME RECORDS</a>
+        </li>
+      <li class="nav-item mx-3">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">LOGOUT</a>
+      </li>
+    </ul> 
+    </div>
+  </nav>
+  <div id="back">
+  
+        
+  </div>
+<div id="form" class="jumbotron">
+  <h1>Investigating Officer Name</h1>      
+  <p>Info related to him if any</p>
+</div>
+
+<div id="form1" class="container">
+  <fieldset>
+    <legend>Investigation Details</legend>
+  </fieldset>     
+</div>
+  
+  </body>
